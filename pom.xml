@@ -27,6 +27,7 @@
         <!--   <spring-cloud.version>Greenwich.RC</spring-cloud.version>-->
         <spring-boot-pagehelper.version>1.2.5</spring-boot-pagehelper.version>
         <mysql.version>5.1.46</mysql.version>
+        <swagger2.version>2.8.0</swagger2.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -93,6 +94,17 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>1.2.58</version>
+            </dependency>
+            <!--swagger-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
